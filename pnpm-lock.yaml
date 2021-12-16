@@ -159,25 +159,41 @@ importers:
 
   packages/vue2:
     specifiers:
+      '@babel/core': ^7.16.0
+      '@babel/preset-env': ^7.16.4
       '@vue/cli-plugin-babel': ~4.5.0
       '@vue/cli-plugin-eslint': ~4.5.0
       '@vue/cli-service': ~4.5.0
+      '@vue/test-utils': ^1.3.0
+      babel-core: ^7.0.0-bridge.0
       babel-eslint: ^10.1.0
+      babel-jest: ^27.4.0
       core-js: ^3.6.5
       eslint: ^6.7.2
       eslint-plugin-vue: ^6.2.2
+      jest: ^27.4.0
+      jest-serializer-vue: ^2.0.2
       vue: ^2.6.11
+      vue-jest: ^3.0.7
       vue-template-compiler: ^2.6.11
     dependencies:
       core-js: 3.19.3
       vue: 2.6.14
     devDependencies:
+      '@babel/core': 7.16.0
+      '@babel/preset-env': 7.16.4_@babel+core@7.16.0
       '@vue/cli-plugin-babel': 4.5.15_4c1e5ebbf041a85328f9984e4ede8f8a
       '@vue/cli-plugin-eslint': 4.5.15_159f9ca94908a7070131e2c321d72521
-      '@vue/cli-service': 4.5.15_9181a432bd134c6b2a02bdf42e843ab9
+      '@vue/cli-service': 4.5.15_vue-template-compiler@2.6.14
+      '@vue/test-utils': 1.3.0_9065e7474e033a8e4b95615fc8e6c36c
+      babel-core: 7.0.0-bridge.0_@babel+core@7.16.0
       babel-eslint: 10.1.0_eslint@6.8.0
+      babel-jest: 27.4.4_@babel+core@7.16.0
       eslint: 6.8.0
       eslint-plugin-vue: 6.2.2_eslint@6.8.0
+      jest: 27.4.4
+      jest-serializer-vue: 2.0.2
+      vue-jest: 3.0.7_23079ea8b11744def63c06b8933c1bec
       vue-template-compiler: 2.6.14
 
   packages/vue3:
@@ -2034,7 +2050,7 @@ packages:
     dev: true
 
   /@babel/preset-env/7.16.4_@babel+core@7.16.0:
-    resolution: {integrity: sha512-v0QtNd81v/xKj4gNKeuAerQ/azeNn/G1B1qMLeXOcV8+4TWlD2j3NV1u8q29SDFBXx/NBq5kyEAO+0mpRgacjA==, tarball: '@babel/preset-env/download/@babel/preset-env-7.16.4.tgz?cache=0&sync_timestamp=1637117583125&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40babel%2Fpreset-env%2Fdownload%2F%40babel%2Fpreset-env-7.16.4.tgz'}
+    resolution: {integrity: sha512-v0QtNd81v/xKj4gNKeuAerQ/azeNn/G1B1qMLeXOcV8+4TWlD2j3NV1u8q29SDFBXx/NBq5kyEAO+0mpRgacjA==, tarball: '@babel/preset-env/download/@babel/preset-env-7.16.4.tgz'}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -3014,6 +3030,14 @@ packages:
     resolution: {integrity: sha1-IPGClPeX8iCbX2XI47XI6CYdEnw=, tarball: '@types/stack-utils/download/@types/stack-utils-2.0.1.tgz'}
     dev: true
 
+  /@types/strip-bom/3.0.0:
+    resolution: {integrity: sha1-FKjsOVbC6B7bdSB5CuzyHCkK69I=, tarball: '@types/strip-bom/download/@types/strip-bom-3.0.0.tgz'}
+    dev: true
+
+  /@types/strip-json-comments/0.0.30:
+    resolution: {integrity: sha1-mqMMBNshKpoGSdaub9UKzMQHSKE=, tarball: '@types/strip-json-comments/download/@types/strip-json-comments-0.0.30.tgz'}
+    dev: true
+
   /@types/tapable/1.0.8:
     resolution: {integrity: sha1-uUpDkchWZse3Mpn9OtedT6pDUxA=, tarball: '@types/tapable/download/@types/tapable-1.0.8.tgz'}
     dev: true
@@ -3325,7 +3349,7 @@ packages:
     dependencies:
       '@babel/core': 7.16.0
       '@vue/babel-preset-app': 4.5.15_vue@2.6.14
-      '@vue/cli-service': 4.5.15_9181a432bd134c6b2a02bdf42e843ab9
+      '@vue/cli-service': 4.5.15_vue-template-compiler@2.6.14
       '@vue/cli-shared-utils': 4.5.15
       babel-loader: 8.2.3_1bd60a6cd0f7024f034efd75ae733a3f
       cache-loader: 4.1.0_webpack@4.46.0
@@ -3344,7 +3368,7 @@ packages:
       '@vue/cli-service': ^3.0.0 || ^4.0.0-0
       eslint: '>= 1.6.0 < 7.0.0'
     dependencies:
-      '@vue/cli-service': 4.5.15_9181a432bd134c6b2a02bdf42e843ab9
+      '@vue/cli-service': 4.5.15_vue-template-compiler@2.6.14
       '@vue/cli-shared-utils': 4.5.15
       eslint: 6.8.0
       eslint-loader: 2.2.1_eslint@6.8.0+webpack@4.46.0
@@ -3362,7 +3386,7 @@ packages:
     peerDependencies:
       '@vue/cli-service': ^3.0.0 || ^4.0.0-0
     dependencies:
-      '@vue/cli-service': 4.5.15_9181a432bd134c6b2a02bdf42e843ab9
+      '@vue/cli-service': 4.5.15_vue-template-compiler@2.6.14
       '@vue/cli-shared-utils': 4.5.15
     dev: true
 
@@ -3371,10 +3395,10 @@ packages:
     peerDependencies:
       '@vue/cli-service': ^3.0.0 || ^4.0.0-0
     dependencies:
-      '@vue/cli-service': 4.5.15_9181a432bd134c6b2a02bdf42e843ab9
+      '@vue/cli-service': 4.5.15_vue-template-compiler@2.6.14
     dev: true
 
-  /@vue/cli-service/4.5.15_9181a432bd134c6b2a02bdf42e843ab9:
+  /@vue/cli-service/4.5.15_vue-template-compiler@2.6.14:
     resolution: {integrity: sha1-DpoYbVFVACfQ5o6VBCB3600RW0U=, tarball: '@vue/cli-service/download/@vue/cli-service-4.5.15.tgz'}
     engines: {node: '>=8'}
     hasBin: true
@@ -3443,7 +3467,7 @@ packages:
       lodash.transform: 4.6.0
       mini-css-extract-plugin: 0.9.0_webpack@4.46.0
       minimist: 1.2.5
-      pnp-webpack-plugin: 1.7.0_typescript@4.5.3
+      pnp-webpack-plugin: 1.7.0
       portfinder: 1.0.28
       postcss-loader: 3.0.0
       ssri: 8.0.1
@@ -3592,6 +3616,19 @@ packages:
   /@vue/shared/3.2.26:
     resolution: {integrity: sha512-vPV6Cq+NIWbH5pZu+V+2QHE9y1qfuTq49uNWw4f7FDEeZaDU2H2cx5jcUZOAKW7qTrUS4k6qZPbMy1x4N96nbA==, tarball: '@vue/shared/download/@vue/shared-3.2.26.tgz'}
     dev: false
+
+  /@vue/test-utils/1.3.0_9065e7474e033a8e4b95615fc8e6c36c:
+    resolution: {integrity: sha512-Xk2Xiyj2k5dFb8eYUKkcN9PzqZSppTlx7LaQWBbdA8tqh3jHr/KHX2/YLhNFc/xwDrgeLybqd+4ZCPJSGPIqeA==, tarball: '@vue/test-utils/download/@vue/test-utils-1.3.0.tgz'}
+    peerDependencies:
+      vue: 2.x
+      vue-template-compiler: ^2.x
+    dependencies:
+      dom-event-types: 1.0.0
+      lodash: 4.17.21
+      pretty: 2.0.0
+      vue: 2.6.14
+      vue-template-compiler: 2.6.14
+    dev: true
 
   /@vue/web-component-wrapper/1.3.0:
     resolution: {integrity: sha1-trQKdiVCnSvXwigd26YB7QXcfxo=, tarball: '@vue/web-component-wrapper/download/@vue/web-component-wrapper-1.3.0.tgz'}
@@ -3742,6 +3779,10 @@ packages:
 
   /abab/2.0.5:
     resolution: {integrity: sha1-wLZ4+zLWD8EhnHhNaoJv44Wut5o=, tarball: abab/download/abab-2.0.5.tgz}
+    dev: true
+
+  /abbrev/1.1.1:
+    resolution: {integrity: sha1-+PLIh60Qv2f2NPAFtph/7TF5qsg=, tarball: abbrev/download/abbrev-1.1.1.tgz}
     dev: true
 
   /accepts/1.3.7:
@@ -4183,6 +4224,22 @@ packages:
       - debug
     dev: false
 
+  /babel-code-frame/6.26.0:
+    resolution: {integrity: sha1-Y/1D99weO7fONZR9uP42mj9Yx0s=, tarball: babel-code-frame/download/babel-code-frame-6.26.0.tgz}
+    dependencies:
+      chalk: 1.1.3
+      esutils: 2.0.3
+      js-tokens: 3.0.2
+    dev: true
+
+  /babel-core/7.0.0-bridge.0_@babel+core@7.16.0:
+    resolution: {integrity: sha1-laSS3dkPm06aSh2hTrM1uHtjTs4=, tarball: babel-core/download/babel-core-7.0.0-bridge.0.tgz}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.16.0
+    dev: true
+
   /babel-eslint/10.1.0_eslint@6.8.0:
     resolution: {integrity: sha1-aWjlaKkQt4+zd5zdi2rC9HmUMjI=, tarball: babel-eslint/download/babel-eslint-10.1.0.tgz?cache=0&sync_timestamp=1636360510558&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fbabel-eslint%2Fdownload%2Fbabel-eslint-10.1.0.tgz}
     engines: {node: '>=6'}
@@ -4233,6 +4290,12 @@ packages:
       make-dir: 3.1.0
       schema-utils: 2.7.1
       webpack: 4.46.0
+    dev: true
+
+  /babel-messages/6.23.0:
+    resolution: {integrity: sha1-8830cDhYA1sqKVHG7F7fbGLyYw4=, tarball: babel-messages/download/babel-messages-6.23.0.tgz}
+    dependencies:
+      babel-runtime: 6.26.0
     dev: true
 
   /babel-plugin-dynamic-import-node/2.3.3:
@@ -4333,6 +4396,22 @@ packages:
       - supports-color
     dev: true
 
+  /babel-plugin-transform-es2015-modules-commonjs/6.26.2:
+    resolution: {integrity: sha1-WKeThjqefKhwvcWogRF/+sJ9tvM=, tarball: babel-plugin-transform-es2015-modules-commonjs/download/babel-plugin-transform-es2015-modules-commonjs-6.26.2.tgz}
+    dependencies:
+      babel-plugin-transform-strict-mode: 6.24.1
+      babel-runtime: 6.26.0
+      babel-template: 6.26.0
+      babel-types: 6.26.0
+    dev: true
+
+  /babel-plugin-transform-strict-mode/6.24.1:
+    resolution: {integrity: sha1-1fr3qleKZbvlkc9e2uBKDGcCB1g=, tarball: babel-plugin-transform-strict-mode/download/babel-plugin-transform-strict-mode-6.24.1.tgz}
+    dependencies:
+      babel-runtime: 6.26.0
+      babel-types: 6.26.0
+    dev: true
+
   /babel-preset-current-node-syntax/1.0.1_@babel+core@7.16.0:
     resolution: {integrity: sha1-tDmSObibKgEfndvj5PQB/EDP9zs=, tarball: babel-preset-current-node-syntax/download/babel-preset-current-node-syntax-1.0.1.tgz}
     peerDependencies:
@@ -4362,6 +4441,51 @@ packages:
       '@babel/core': 7.16.0
       babel-plugin-jest-hoist: 27.4.0
       babel-preset-current-node-syntax: 1.0.1_@babel+core@7.16.0
+    dev: true
+
+  /babel-runtime/6.26.0:
+    resolution: {integrity: sha1-llxwWGaOgrVde/4E/yM3vItWR/4=, tarball: babel-runtime/download/babel-runtime-6.26.0.tgz}
+    dependencies:
+      core-js: 2.6.12
+      regenerator-runtime: 0.11.1
+    dev: true
+
+  /babel-template/6.26.0:
+    resolution: {integrity: sha1-3gPi0WOWsGn0bdn/+FIfsaDjXgI=, tarball: babel-template/download/babel-template-6.26.0.tgz}
+    dependencies:
+      babel-runtime: 6.26.0
+      babel-traverse: 6.26.0
+      babel-types: 6.26.0
+      babylon: 6.18.0
+      lodash: 4.17.21
+    dev: true
+
+  /babel-traverse/6.26.0:
+    resolution: {integrity: sha1-RqnL1+3MYsjlwGTi0tjQ9ANXZu4=, tarball: babel-traverse/download/babel-traverse-6.26.0.tgz}
+    dependencies:
+      babel-code-frame: 6.26.0
+      babel-messages: 6.23.0
+      babel-runtime: 6.26.0
+      babel-types: 6.26.0
+      babylon: 6.18.0
+      debug: 2.6.9
+      globals: 9.18.0
+      invariant: 2.2.4
+      lodash: 4.17.21
+    dev: true
+
+  /babel-types/6.26.0:
+    resolution: {integrity: sha1-o7Bz+Uq0nrb6Vc1lInozQ4BjJJc=, tarball: babel-types/download/babel-types-6.26.0.tgz}
+    dependencies:
+      babel-runtime: 6.26.0
+      esutils: 2.0.3
+      lodash: 4.17.21
+      to-fast-properties: 1.0.3
+    dev: true
+
+  /babylon/6.18.0:
+    resolution: {integrity: sha1-ry87iPpvXB5MY00aD46sT1WzleM=, tarball: babylon/download/babylon-6.18.0.tgz}
+    hasBin: true
     dev: true
 
   /balanced-match/1.0.2:
@@ -4429,7 +4553,6 @@ packages:
     dependencies:
       file-uri-to-path: 1.0.0
     dev: true
-    optional: true
 
   /bluebird/3.7.2:
     resolution: {integrity: sha1-nyKcFb4nJFT/qXOs4NvueaGww28=, tarball: bluebird/download/bluebird-3.7.2.tgz}
@@ -4513,7 +4636,7 @@ packages:
     dev: true
 
   /browser-process-hrtime/1.0.0:
-    resolution: {integrity: sha1-PJtLfXgsgSHlbxAQbYTA0P/JRiY=, tarball: browser-process-hrtime/download/browser-process-hrtime-1.0.0.tgz?cache=0&sync_timestamp=1634049762249&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fbrowser-process-hrtime%2Fdownload%2Fbrowser-process-hrtime-1.0.0.tgz}
+    resolution: {integrity: sha1-PJtLfXgsgSHlbxAQbYTA0P/JRiY=, tarball: browser-process-hrtime/download/browser-process-hrtime-1.0.0.tgz}
     dev: true
 
   /browserify-aes/1.2.0:
@@ -4995,6 +5118,11 @@ packages:
     engines: {node: '>=0.8'}
     dev: true
 
+  /clone/2.1.2:
+    resolution: {integrity: sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=, tarball: clone/download/clone-2.1.2.tgz}
+    engines: {node: '>=0.8'}
+    dev: true
+
   /co/4.6.0:
     resolution: {integrity: sha1-bqa989hTrlTMuOR7+gvz+QMfsYQ=, tarball: co/download/co-4.6.0.tgz}
     engines: {iojs: '>= 1.0.0', node: '>= 0.12.0'}
@@ -5146,6 +5274,22 @@ packages:
       inherits: 2.0.4
       readable-stream: 3.6.0
       typedarray: 0.0.6
+    dev: true
+
+  /condense-newlines/0.2.1:
+    resolution: {integrity: sha1-PemFVTE5R10yUCyDsC9gaE0kxV8=, tarball: condense-newlines/download/condense-newlines-0.2.1.tgz}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      extend-shallow: 2.0.1
+      is-whitespace: 0.3.0
+      kind-of: 3.2.2
+    dev: true
+
+  /config-chain/1.1.13:
+    resolution: {integrity: sha1-+tB5Wqamza/57Rto6d/5Q3LCMvQ=, tarball: config-chain/download/config-chain-1.1.13.tgz}
+    dependencies:
+      ini: 1.3.8
+      proto-list: 1.2.4
     dev: true
 
   /connect-history-api-fallback/1.6.0:
@@ -5404,6 +5548,12 @@ packages:
       semver: 7.0.0
     dev: true
 
+  /core-js/2.6.12:
+    resolution: {integrity: sha1-2TM9+nsGXjR8xWgiGdb2kIWcwuw=, tarball: core-js/download/core-js-2.6.12.tgz}
+    deprecated: core-js@<3.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+    requiresBuild: true
+    dev: true
+
   /core-js/3.19.3:
     resolution: {integrity: sha512-LeLBMgEGSsG7giquSzvgBrTS7V5UL6ks3eQlUSbN8dJStlLFiRzUm5iqsRyzUB8carhfKjkJ2vzKqE6z1Vga9g==, tarball: core-js/download/core-js-3.19.3.tgz}
     requiresBuild: true
@@ -5596,6 +5746,15 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
+  /css/2.2.4:
+    resolution: {integrity: sha1-xkZ1XHOXHyu6amAeLPL9cbEpiSk=, tarball: css/download/css-2.2.4.tgz}
+    dependencies:
+      inherits: 2.0.4
+      source-map: 0.6.1
+      source-map-resolve: 0.5.3
+      urix: 0.1.0
+    dev: true
+
   /cssesc/3.0.0:
     resolution: {integrity: sha1-N3QZGZA7hoVl4cCep0dEXNGJg+4=, tarball: cssesc/download/cssesc-3.0.0.tgz}
     engines: {node: '>=4'}
@@ -5729,6 +5888,15 @@ packages:
     resolution: {integrity: sha1-sgOOhG3DO6pXlhKNCAS0VbjB4h0=, tarball: de-indent/download/de-indent-1.0.2.tgz}
     dev: true
 
+  /deasync/0.1.24:
+    resolution: {integrity: sha512-i98vg42xNfRZCymummMAN0rIcQ1gZFinSe3btvPIvy6JFTaeHcumeKybRo2HTv86nasfmT0nEgAn2ggLZhOCVA==, tarball: deasync/download/deasync-0.1.24.tgz}
+    engines: {node: '>=0.11.0'}
+    requiresBuild: true
+    dependencies:
+      bindings: 1.5.0
+      node-addon-api: 1.7.2
+    dev: true
+
   /debug/2.6.9:
     resolution: {integrity: sha1-XRKFFd8TT/Mn6QpMk/Tgd6U2NB8=, tarball: debug/download/debug-2.6.9.tgz}
     dependencies:
@@ -5826,7 +5994,7 @@ packages:
     dev: true
 
   /deepmerge/4.2.2:
-    resolution: {integrity: sha1-RNLqNnm49NT/ujPwPYZfwee/SVU=, tarball: deepmerge/download/deepmerge-4.2.2.tgz}
+    resolution: {integrity: sha1-RNLqNnm49NT/ujPwPYZfwee/SVU=, tarball: deepmerge/download/deepmerge-4.2.2.tgz?cache=0&sync_timestamp=1632822781299&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fdeepmerge%2Fdownload%2Fdeepmerge-4.2.2.tgz}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -6001,6 +6169,10 @@ packages:
       utila: 0.4.0
     dev: true
 
+  /dom-event-types/1.0.0:
+    resolution: {integrity: sha1-WDCgop4b+Df+UKcM2ApZcjKBPK4=, tarball: dom-event-types/download/dom-event-types-1.0.0.tgz}
+    dev: true
+
   /dom-serializer/0.2.2:
     resolution: {integrity: sha1-GvuB9TNxcXXUeGVd68XjMtn5u1E=, tarball: dom-serializer/download/dom-serializer-0.2.2.tgz}
     dependencies:
@@ -6105,6 +6277,16 @@ packages:
     dependencies:
       jsbn: 0.1.1
       safer-buffer: 2.1.2
+    dev: true
+
+  /editorconfig/0.15.3:
+    resolution: {integrity: sha1-vvhMTnX7jcsM5c7o79UcFZmb78U=, tarball: editorconfig/download/editorconfig-0.15.3.tgz}
+    hasBin: true
+    dependencies:
+      commander: 2.20.3
+      lru-cache: 4.1.5
+      semver: 5.7.1
+      sigmund: 1.0.1
     dev: true
 
   /ee-first/1.1.1:
@@ -7251,6 +7433,13 @@ packages:
       to-regex: 3.0.2
     dev: true
 
+  /extract-from-css/0.4.4:
+    resolution: {integrity: sha1-HqffLnx8brmSL6COitrqSG9vj5I=, tarball: extract-from-css/download/extract-from-css-0.4.4.tgz}
+    engines: {node: '>=0.10.0', npm: '>=2.0.0'}
+    dependencies:
+      css: 2.2.4
+    dev: true
+
   /extsprintf/1.3.0:
     resolution: {integrity: sha1-lpGEQOMEGnpBT4xS48V06zw+HgU=, tarball: extsprintf/download/extsprintf-1.3.0.tgz}
     engines: {'0': node >=0.6.0}
@@ -7356,7 +7545,6 @@ packages:
   /file-uri-to-path/1.0.0:
     resolution: {integrity: sha1-VTp7hEb/b2hDWcRF8eN6BdrMM90=, tarball: file-uri-to-path/download/file-uri-to-path-1.0.0.tgz}
     dev: true
-    optional: true
 
   /filesize/3.6.1:
     resolution: {integrity: sha1-CQuz7gG2+AGoqL6Z0xcQs0Irsxc=, tarball: filesize/download/filesize-3.6.1.tgz}
@@ -7391,6 +7579,14 @@ packages:
       parseurl: 1.3.3
       statuses: 1.5.0
       unpipe: 1.0.0
+    dev: true
+
+  /find-babel-config/1.2.0:
+    resolution: {integrity: sha1-qbezF+tbmGDNqdVHQKjIM3oig6I=, tarball: find-babel-config/download/find-babel-config-1.2.0.tgz}
+    engines: {node: '>=4.0.0'}
+    dependencies:
+      json5: 0.5.1
+      path-exists: 3.0.0
     dev: true
 
   /find-cache-dir/0.1.1:
@@ -7799,6 +7995,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
+    dev: true
+
+  /globals/9.18.0:
+    resolution: {integrity: sha1-qjiWs+abSH8X4x7SFD1pqOMMLYo=, tarball: globals/download/globals-9.18.0.tgz}
+    engines: {node: '>=0.10.0'}
     dev: true
 
   /globby/11.0.4:
@@ -8418,6 +8619,12 @@ packages:
       side-channel: 1.0.4
     dev: true
 
+  /invariant/2.2.4:
+    resolution: {integrity: sha1-YQ88ksk1nOHbYW5TgAjSP/NRWOY=, tarball: invariant/download/invariant-2.2.4.tgz}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: true
+
   /ip-regex/2.1.0:
     resolution: {integrity: sha1-+ni/XS5pE8kRzp+BnuUUa7bYROk=, tarball: ip-regex/download/ip-regex-2.1.0.tgz}
     engines: {node: '>=4'}
@@ -8779,6 +8986,11 @@ packages:
     resolution: {integrity: sha512-qctsuLZmIQ0+vSSMfoVvyFe2+GSEvnmZ2ezTup1SBse9+twCCeial6EEi3Nc2KFcf6+qz2FBPnjXsk8xhKSaPQ==, tarball: is-weakref/download/is-weakref-1.0.2.tgz}
     dependencies:
       call-bind: 1.0.2
+    dev: true
+
+  /is-whitespace/0.3.0:
+    resolution: {integrity: sha1-Fjnssb4DauxppUy7QBz77XEUq38=, tarball: is-whitespace/download/is-whitespace-0.3.0.tgz}
+    engines: {node: '>=0.10.0'}
     dev: true
 
   /is-windows/1.0.2:
@@ -9258,6 +9470,12 @@ packages:
       - supports-color
     dev: true
 
+  /jest-serializer-vue/2.0.2:
+    resolution: {integrity: sha1-sjjvKGNX7GtIBCG9RxRQUJh9WbM=, tarball: jest-serializer-vue/download/jest-serializer-vue-2.0.2.tgz}
+    dependencies:
+      pretty: 2.0.0
+    dev: true
+
   /jest-serializer/27.4.0:
     resolution: {integrity: sha512-RDhpcn5f1JYTX2pvJAGDcnsNTnsV9bjYPU8xcV+xPwOXnUPOQwf4ZEuiU6G9H1UztH+OapMgu/ckEVwO87PwnQ==, tarball: jest-serializer/download/jest-serializer-27.4.0.tgz}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -9365,6 +9583,17 @@ packages:
       - utf-8-validate
     dev: true
 
+  /js-beautify/1.14.0:
+    resolution: {integrity: sha1-LOeQxVXVPOHj1zYyJ6z13GkCTC0=, tarball: js-beautify/download/js-beautify-1.14.0.tgz}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      config-chain: 1.1.13
+      editorconfig: 0.15.3
+      glob: 7.2.0
+      nopt: 5.0.0
+    dev: true
+
   /js-message/1.0.7:
     resolution: {integrity: sha1-+93QU8ekcCGHG7iyyVOXzBfCDkc=, tarball: js-message/download/js-message-1.0.7.tgz}
     engines: {node: '>=0.6.0'}
@@ -9375,6 +9604,10 @@ packages:
     engines: {node: '>=1.0.0'}
     dependencies:
       easy-stack: 1.0.1
+    dev: true
+
+  /js-tokens/3.0.2:
+    resolution: {integrity: sha1-mGbfOVECEw449/mWvOtlRDIJwls=, tarball: js-tokens/download/js-tokens-3.0.2.tgz}
     dev: true
 
   /js-tokens/4.0.0:
@@ -9685,7 +9918,7 @@ packages:
     dev: true
 
   /loader-utils/2.0.2:
-    resolution: {integrity: sha1-1uO0+4GHByGuTghoqxHdY4NowSk=, tarball: loader-utils/download/loader-utils-2.0.2.tgz?cache=0&sync_timestamp=1636687924218&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Floader-utils%2Fdownload%2Floader-utils-2.0.2.tgz}
+    resolution: {integrity: sha1-1uO0+4GHByGuTghoqxHdY4NowSk=, tarball: loader-utils/download/loader-utils-2.0.2.tgz}
     engines: {node: '>=8.9.0'}
     dependencies:
       big.js: 5.2.2
@@ -9811,6 +10044,13 @@ packages:
   /loglevel/1.8.0:
     resolution: {integrity: sha512-G6A/nJLRgWOuuwdNuA6koovfEV1YpqqAG4pRUlFaz3jj2QNZ8M4vBqnVA+HBTmU/AMNUtlOsMmSpF6NyOjztbA==, tarball: loglevel/download/loglevel-1.8.0.tgz}
     engines: {node: '>= 0.6.0'}
+    dev: true
+
+  /loose-envify/1.4.0:
+    resolution: {integrity: sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=, tarball: loose-envify/download/loose-envify-1.4.0.tgz?cache=0&sync_timestamp=1634004376684&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Floose-envify%2Fdownload%2Floose-envify-1.4.0.tgz}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
     dev: true
 
   /lower-case/1.1.4:
@@ -10286,6 +10526,18 @@ packages:
       lower-case: 1.1.4
     dev: true
 
+  /node-addon-api/1.7.2:
+    resolution: {integrity: sha1-PfMLlXILU8JOWZSLSVMrZiRE9U0=, tarball: node-addon-api/download/node-addon-api-1.7.2.tgz}
+    dev: true
+
+  /node-cache/4.2.1:
+    resolution: {integrity: sha1-79hHTe5O3sQTjN3tWA9VFlAPczQ=, tarball: node-cache/download/node-cache-4.2.1.tgz}
+    engines: {node: '>= 0.4.6'}
+    dependencies:
+      clone: 2.1.2
+      lodash: 4.17.21
+    dev: true
+
   /node-forge/0.10.0:
     resolution: {integrity: sha1-Mt6ir7Ppkm8C7lzoeUkCaRpna/M=, tarball: node-forge/download/node-forge-0.10.0.tgz}
     engines: {node: '>= 6.0.0'}
@@ -10336,6 +10588,14 @@ packages:
     resolution: {integrity: sha1-PR05XyBPHy8ppUNYuftnh2WtL8U=, tarball: node-releases/download/node-releases-2.0.1.tgz}
     dev: true
 
+  /nopt/5.0.0:
+    resolution: {integrity: sha1-UwlCu1ilEvzK/lP+IQ8TolNV3Ig=, tarball: nopt/download/nopt-5.0.0.tgz}
+    engines: {node: '>=6'}
+    hasBin: true
+    dependencies:
+      abbrev: 1.1.1
+    dev: true
+
   /normalize-package-data/2.5.0:
     resolution: {integrity: sha1-5m2xg4sgDB38IzIl0SyzZSDiNKg=, tarball: normalize-package-data/download/normalize-package-data-2.5.0.tgz}
     dependencies:
@@ -10361,7 +10621,7 @@ packages:
     dev: true
 
   /normalize-path/2.1.1:
-    resolution: {integrity: sha1-GrKLVW4Zg2Oowab35vogE3/mrtk=, tarball: normalize-path/download/normalize-path-2.1.1.tgz}
+    resolution: {integrity: sha1-GrKLVW4Zg2Oowab35vogE3/mrtk=, tarball: normalize-path/download/normalize-path-2.1.1.tgz?cache=0&sync_timestamp=1632822667884&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fnormalize-path%2Fdownload%2Fnormalize-path-2.1.1.tgz}
     engines: {node: '>=0.10.0'}
     dependencies:
       remove-trailing-separator: 1.1.0
@@ -10942,11 +11202,11 @@ packages:
       irregular-plurals: 3.3.0
     dev: true
 
-  /pnp-webpack-plugin/1.7.0_typescript@4.5.3:
+  /pnp-webpack-plugin/1.7.0:
     resolution: {integrity: sha1-ZXQThPbYBW824iVajWf/wghm9ck=, tarball: pnp-webpack-plugin/download/pnp-webpack-plugin-1.7.0.tgz}
     engines: {node: '>=6'}
     dependencies:
-      ts-pnp: 1.2.0_typescript@4.5.3
+      ts-pnp: 1.2.0
     transitivePeerDependencies:
       - typescript
     dev: true
@@ -11373,6 +11633,7 @@ packages:
     resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==, tarball: prettier/download/prettier-2.5.1.tgz}
     engines: {node: '>=10.13.0'}
     hasBin: true
+    requiresBuild: true
     dev: true
 
   /pretty-error/2.1.2:
@@ -11415,6 +11676,15 @@ packages:
       prettier: 2.5.1
     dev: true
 
+  /pretty/2.0.0:
+    resolution: {integrity: sha1-rbx5YLe7/iiaVX3F9zdhmiINBqU=, tarball: pretty/download/pretty-2.0.0.tgz}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      condense-newlines: 0.2.1
+      extend-shallow: 2.0.1
+      js-beautify: 1.14.0
+    dev: true
+
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha1-eCDZsWEgzFXKmud5JoCufbptf+I=, tarball: process-nextick-args/download/process-nextick-args-2.0.1.tgz}
     dev: true
@@ -11439,6 +11709,10 @@ packages:
     dependencies:
       kleur: 3.0.3
       sisteransi: 1.0.5
+    dev: true
+
+  /proto-list/1.2.4:
+    resolution: {integrity: sha1-IS1b/hMYMGpCD2QCuOJv85ZHqEk=, tarball: proto-list/download/proto-list-1.2.4.tgz}
     dev: true
 
   /proxy-addr/2.0.7:
@@ -11679,6 +11953,10 @@ packages:
     resolution: {integrity: sha1-uTRtiCfo9aMve6KWN9OYtpAUhIo=, tarball: regenerate/download/regenerate-1.4.2.tgz}
     dev: true
 
+  /regenerator-runtime/0.11.1:
+    resolution: {integrity: sha1-vgWtf5v30i4Fb5cmzuUBf78Z4uk=, tarball: regenerator-runtime/download/regenerator-runtime-0.11.1.tgz}
+    dev: true
+
   /regenerator-runtime/0.13.9:
     resolution: {integrity: sha1-iSV0Kpj/2QgUmI11Zq0wyjsmO1I=, tarball: regenerator-runtime/download/regenerator-runtime-0.13.9.tgz}
     dev: true
@@ -11817,14 +12095,14 @@ packages:
     dev: true
 
   /resolve-cwd/2.0.0:
-    resolution: {integrity: sha1-AKn3OHVW4nA46uIyyqNypqWbZlo=, tarball: resolve-cwd/download/resolve-cwd-2.0.0.tgz}
+    resolution: {integrity: sha1-AKn3OHVW4nA46uIyyqNypqWbZlo=, tarball: resolve-cwd/download/resolve-cwd-2.0.0.tgz?cache=0&sync_timestamp=1632822727683&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fresolve-cwd%2Fdownload%2Fresolve-cwd-2.0.0.tgz}
     engines: {node: '>=4'}
     dependencies:
       resolve-from: 3.0.0
     dev: true
 
   /resolve-cwd/3.0.0:
-    resolution: {integrity: sha1-DwB18bslRHZs9zumpuKt/ryxPy0=, tarball: resolve-cwd/download/resolve-cwd-3.0.0.tgz}
+    resolution: {integrity: sha1-DwB18bslRHZs9zumpuKt/ryxPy0=, tarball: resolve-cwd/download/resolve-cwd-3.0.0.tgz?cache=0&sync_timestamp=1632822727683&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fresolve-cwd%2Fdownload%2Fresolve-cwd-3.0.0.tgz}
     engines: {node: '>=8'}
     dependencies:
       resolve-from: 5.0.0
@@ -11913,7 +12191,7 @@ packages:
     dev: true
 
   /rimraf/2.6.3:
-    resolution: {integrity: sha1-stEE/g2Psnz54KHNqCYt04M8bKs=, tarball: rimraf/download/rimraf-2.6.3.tgz?cache=0&sync_timestamp=1634019726138&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Frimraf%2Fdownload%2Frimraf-2.6.3.tgz}
+    resolution: {integrity: sha1-stEE/g2Psnz54KHNqCYt04M8bKs=, tarball: rimraf/download/rimraf-2.6.3.tgz}
     hasBin: true
     dependencies:
       glob: 7.2.0
@@ -11927,7 +12205,7 @@ packages:
     dev: true
 
   /rimraf/3.0.2:
-    resolution: {integrity: sha1-8aVAK6YiCtUswSgrrBrjqkn9Bho=, tarball: rimraf/download/rimraf-3.0.2.tgz?cache=0&sync_timestamp=1634019726138&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Frimraf%2Fdownload%2Frimraf-3.0.2.tgz}
+    resolution: {integrity: sha1-8aVAK6YiCtUswSgrrBrjqkn9Bho=, tarball: rimraf/download/rimraf-3.0.2.tgz}
     hasBin: true
     dependencies:
       glob: 7.2.0
@@ -12181,6 +12459,10 @@ packages:
       object-inspect: 1.11.1
     dev: true
 
+  /sigmund/1.0.1:
+    resolution: {integrity: sha1-P/IfGYytIXX587eBhT/ZTQ0ZtZA=, tarball: sigmund/download/sigmund-1.0.1.tgz}
+    dev: true
+
   /signal-exit/3.0.6:
     resolution: {integrity: sha512-sDl4qMFpijcGw22U5w63KmD3cZJfBuFlVNbVMKje2keoKML7X2UzWbc4XrmEbDwg0NXJc3yv4/ox7b+JWb57kQ==, tarball: signal-exit/download/signal-exit-3.0.6.tgz}
     dev: true
@@ -12196,7 +12478,7 @@ packages:
     dev: true
 
   /slash/1.0.0:
-    resolution: {integrity: sha1-xB8vbDn8FtHNF61LXYlhFK5HDVU=, tarball: slash/download/slash-1.0.0.tgz}
+    resolution: {integrity: sha1-xB8vbDn8FtHNF61LXYlhFK5HDVU=, tarball: slash/download/slash-1.0.0.tgz?cache=0&sync_timestamp=1632822671385&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fslash%2Fdownload%2Fslash-1.0.0.tgz}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -12452,7 +12734,7 @@ packages:
     dev: true
 
   /stack-utils/2.0.5:
-    resolution: {integrity: sha1-0lJl/KmVFUZZ27+6O0klR3jS/dU=, tarball: stack-utils/download/stack-utils-2.0.5.tgz?cache=0&sync_timestamp=1634049355301&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fstack-utils%2Fdownload%2Fstack-utils-2.0.5.tgz}
+    resolution: {integrity: sha1-0lJl/KmVFUZZ27+6O0klR3jS/dU=, tarball: stack-utils/download/stack-utils-2.0.5.tgz}
     engines: {node: '>=10'}
     dependencies:
       escape-string-regexp: 2.0.0
@@ -12796,7 +13078,7 @@ packages:
     dev: true
 
   /terminal-link/2.1.1:
-    resolution: {integrity: sha1-FKZKJ6s8Dfkz6lRvulXy0HjtyZQ=, tarball: terminal-link/download/terminal-link-2.1.1.tgz}
+    resolution: {integrity: sha1-FKZKJ6s8Dfkz6lRvulXy0HjtyZQ=, tarball: terminal-link/download/terminal-link-2.1.1.tgz?cache=0&sync_timestamp=1632822733466&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fterminal-link%2Fdownload%2Fterminal-link-2.1.1.tgz}
     engines: {node: '>=8'}
     dependencies:
       ansi-escapes: 4.3.2
@@ -12925,6 +13207,11 @@ packages:
     resolution: {integrity: sha1-fSKbH8xjfkZsoIEYCDanqr/4P0M=, tarball: to-arraybuffer/download/to-arraybuffer-1.0.1.tgz}
     dev: true
 
+  /to-fast-properties/1.0.3:
+    resolution: {integrity: sha1-uDVx+k2MJbguIxsG46MFXeTKGkc=, tarball: to-fast-properties/download/to-fast-properties-1.0.3.tgz}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /to-fast-properties/2.0.0:
     resolution: {integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=, tarball: to-fast-properties/download/to-fast-properties-2.0.0.tgz}
     engines: {node: '>=4'}
@@ -13049,7 +13336,7 @@ packages:
       yn: 3.1.1
     dev: true
 
-  /ts-pnp/1.2.0_typescript@4.5.3:
+  /ts-pnp/1.2.0:
     resolution: {integrity: sha1-pQCtCEsHmPHDBxrzkeZZEshrypI=, tarball: ts-pnp/download/ts-pnp-1.2.0.tgz}
     engines: {node: '>=6'}
     peerDependencies:
@@ -13057,8 +13344,6 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
-    dependencies:
-      typescript: 4.5.3
     dev: true
 
   /tsconfig-paths/3.12.0:
@@ -13068,6 +13353,15 @@ packages:
       json5: 1.0.1
       minimist: 1.2.5
       strip-bom: 3.0.0
+    dev: true
+
+  /tsconfig/7.0.0:
+    resolution: {integrity: sha1-hFOIdaTcIW5cSlQys6Tew9VOkbc=, tarball: tsconfig/download/tsconfig-7.0.0.tgz}
+    dependencies:
+      '@types/strip-bom': 3.0.0
+      '@types/strip-json-comments': 0.0.30
+      strip-bom: 3.0.0
+      strip-json-comments: 2.0.1
     dev: true
 
   /tsd/0.19.0:
@@ -13412,7 +13706,7 @@ packages:
     dev: true
 
   /v8-to-istanbul/8.1.0:
-    resolution: {integrity: sha1-Cut2OJTxoKFnat+Ki3YSo4kCRGw=, tarball: v8-to-istanbul/download/v8-to-istanbul-8.1.0.tgz}
+    resolution: {integrity: sha1-Cut2OJTxoKFnat+Ki3YSo4kCRGw=, tarball: v8-to-istanbul/download/v8-to-istanbul-8.1.0.tgz?cache=0&sync_timestamp=1633005110232&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fv8-to-istanbul%2Fdownload%2Fv8-to-istanbul-8.1.0.tgz}
     engines: {node: '>=10.12.0'}
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.3
@@ -13508,6 +13802,29 @@ packages:
 
   /vue-hot-reload-api/2.3.4:
     resolution: {integrity: sha1-UylVzB6yCKPZkLOp+acFdGV+CPI=, tarball: vue-hot-reload-api/download/vue-hot-reload-api-2.3.4.tgz}
+    dev: true
+
+  /vue-jest/3.0.7_23079ea8b11744def63c06b8933c1bec:
+    resolution: {integrity: sha1-ptKXWKXLTXUPXRJCISvjm+QpajM=, tarball: vue-jest/download/vue-jest-3.0.7.tgz}
+    peerDependencies:
+      babel-core: ^6.25.0 || ^7.0.0-0
+      vue: ^2.x
+      vue-template-compiler: ^2.x
+    dependencies:
+      babel-core: 7.0.0-bridge.0_@babel+core@7.16.0
+      babel-plugin-transform-es2015-modules-commonjs: 6.26.2
+      chalk: 2.4.2
+      deasync: 0.1.24
+      extract-from-css: 0.4.4
+      find-babel-config: 1.2.0
+      js-beautify: 1.14.0
+      node-cache: 4.2.1
+      object-assign: 4.1.1
+      source-map: 0.5.7
+      tsconfig: 7.0.0
+      vue: 2.6.14
+      vue-template-compiler: 2.6.14
+      vue-template-es2015-compiler: 1.9.1
     dev: true
 
   /vue-loader/15.9.8_679359cdb69c218f2f8f476b2ba08796:
