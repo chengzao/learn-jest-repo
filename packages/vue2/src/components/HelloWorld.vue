@@ -1,6 +1,10 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <span class="item">span tag</span>
+    <button id="testClick" @click="changeText">{{btnText}}</button>
+    <span>{{name}}</span>
+    <span id="age" @click="change">{{age}}</span>
   </div>
 </template>
 
@@ -8,7 +12,23 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
+    name: String,
+    age: String
+  },
+  data () {
+    return {
+      btnText: 1,
+      myAge: 1,
+    }
+  },
+  methods: {
+    changeText () {
+      this.btnText++
+    },
+    change () {
+      this.$emit('change-age', this.myAge)
+    }
   }
 }
 </script>
