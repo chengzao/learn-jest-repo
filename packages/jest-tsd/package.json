@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tsd": "^0.19.0"
+    "tsd": "0.19.1"
   },
   "tsd": {
     "directory": "tests"
